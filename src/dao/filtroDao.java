@@ -81,7 +81,7 @@ public class filtroDao implements metodos<filtro> {
             ps.setInt(3, c.getCantidad());
             ps.setDouble(4, c.getPrecio());
             ps.setBoolean(5, c.getDispo());
-            ps.setString(5, c.getCodigo());
+            ps.setString(6, c.getCodigo());
             if (ps.executeUpdate() > 0) {
                 return true;
             }
